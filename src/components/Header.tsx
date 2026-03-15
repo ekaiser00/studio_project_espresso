@@ -19,7 +19,7 @@ const Header = () => {
 
         {/* Logo */}
         <Link to="/" className="font-serif-display text-2xl font-bold tracking-wide lg:text-3xl">
-          FLUR
+          STUDIO
         </Link>
 
         {/* Desktop Nav */}
