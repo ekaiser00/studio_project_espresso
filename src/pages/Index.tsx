@@ -1,12 +1,30 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import AnnouncementBar from '@/components/AnnouncementBar';
+import Header from '@/components/Header';
+import HeroSection from '@/components/HeroSection';
+import SocialProofBar from '@/components/SocialProofBar';
+import ProductSection from '@/components/ProductSection';
+import GiftCardBanner from '@/components/GiftCardBanner';
+import ReviewsSection from '@/components/ReviewsSection';
+import Footer from '@/components/Footer';
+import { sets, glasses, baristaTools } from '@/lib/products';
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <AnnouncementBar />
+      <Header />
+      <main>
+        <HeroSection />
+        <SocialProofBar />
+        <ProductSection title="Sets" subtitle="Curated collections for every coffee lover" products={sets} layout="scroll" />
+        <div className="border-t" />
+        <ProductSection title="Glasses" subtitle="Handcrafted borosilicate glass for every drink" products={glasses} layout="grid" />
+        <div className="border-t" />
+        <ProductSection title="Barista Tools" subtitle="Elevate your coffee ritual" products={baristaTools} layout="scroll" />
+        <GiftCardBanner />
+        <ReviewsSection />
+      </main>
+      <Footer />
     </div>
   );
 };
