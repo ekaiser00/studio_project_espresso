@@ -56,12 +56,12 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Decorative FLUR text */}
+      {/* Decorative Studio text */}
       <div className="border-t overflow-hidden py-8">
         <div className="flex whitespace-nowrap animate-marquee">
           {[...Array(10)].map((_, i) => (
             <span key={i} className="font-serif-display text-6xl font-light tracking-widest text-border mx-8 md:text-8xl select-none">
-              FLUR GLASSWARE
+              STUDIO GLASSWARE
             </span>
           ))}
         </div>
@@ -70,7 +70,7 @@ const Footer = () => {
       {/* Copyright */}
       <div className="border-t px-6 py-4 text-center">
         <p className="font-sans-body text-[11px] text-muted-foreground">
-          © 2024 FLUR Glassware. All rights reserved.
+          © 2024 Studio Glassware. All rights reserved.
         </p>
       </div>
     </footer>
